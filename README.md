@@ -29,7 +29,7 @@ El proceso de interpolación lineal implica trazar una línea recta entre dos pu
 
 y = y1 + (x - x1) * ((y2 - y1) / (x2 - x1))
 
-[Implementación](https://github.com/NiliLG/MetodosNumericosT4/tree/main/ReglaSmps)
+[Implementación](https://github.com/NiliLG/MetodosNumericosT5/tree/master/Interpolaci%C3%B3n/Cuadratica)
 
 Algoritmo
 ```java
