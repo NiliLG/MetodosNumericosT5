@@ -31,7 +31,11 @@ y = y1 + (x - x1) * ((y2 - y1) / (x2 - x1))
 
 [Implementación](https://github.com/NiliLG/MetodosNumericosT4/tree/main/ReglaSmps)
 
-[Algoritmo](https://github.com/NiliLG/MetodosNumericosT4/blob/main/AlgoritmoSimpson38)
+Algoritmo
+```java
+Función interpolacionLineal(x1, y1, x2, y2, x)
+        retorno y1 + (x - x1) * ((y2 - y1) / (x2 - x1))
+```
 
 ## Cuadrática
 
@@ -41,8 +45,14 @@ Es un método que utiliza una función cuadrática para estimar valores intermed
 
 [Implementación](https://github.com/NiliLG/MetodosNumericosT4/tree/main/ReglaSmps)
 
-[Algoritmo](https://github.com/NiliLG/MetodosNumericosT4/blob/main/AlgoritmoSimpson38)
-
+Algoritmo
+```java
+Función interpolacionCuadratica(x0, y0, x1, y1, x2, y2)
+    a = y0 * (x1^2 - x2^2) + y1 * (x2^2 - x0^2) + y2 * (x0^2 - x1^2)
+    b = 2 * y0 * (x1 - x2) + 2 * y1 * (x2 - x0) + 2 * y2 * (x0 - x1)
+    y = a / b
+    retorno y
+```
 # Extrapolación
 
 Predice valores más allá del rango de los datos conocidos. A diferencia de la interpolación, que estima valores dentro del rango de datos existentes, la extrapolación extiende esta estimación más allá de esos límites. Utiliza la tendencia identificada en los datos conocidos para prever cómo se comportarán los valores fuera de ese rango. Esto implica hacer suposiciones sobre la continuidad o el patrón subyacente de los datos más allá de lo que se ha observado.
