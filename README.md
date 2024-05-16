@@ -43,6 +43,8 @@ Función interpolacionLineal(x1, y1, x2, y2, x)
 
 Es un método que utiliza una función cuadrática para estimar valores intermedios entre tres puntos conocidos en un conjunto de datos. A diferencia de la interpolación lineal, que asume una relación lineal entre los puntos, la interpolación cuadrática utiliza una función de segundo grado, lo que le permite modelar curvas más complejas.
 
+CON FUNCIÓN (EJEMPLO: ------------ FUNCIÓN: f(x)=2senx-(x^2)/10 ------------ PUNTOS: X0, Y0, X1, Y1, X2, Y2):
+
 ![image](https://github.com/NiliLG/MetodosNumericosT5/assets/147437701/87d1a744-013f-42b0-8063-32d202b7653a)
 
 Algoritmo
@@ -51,6 +53,20 @@ Función interpolacionCuadratica(x0, y0, x1, y1, x2, y2)
     a = y0 * (x1^2 - x2^2) + y1 * (x2^2 - x0^2) + y2 * (x0^2 - x1^2)
     b = 2 * y0 * (x1 - x2) + 2 * y1 * (x2 - x0) + 2 * y2 * (x0 - x1)
     y = a / b
+    retorno y
+```
+
+[Implementación](https://github.com/NiliLG/MetodosNumericosT5/tree/master/Interpolaci%C3%B3n/Cuadratica)
+
+SIN FUNCIÓN (UNICAMENTE LOS PUNTOS: X0, Y0, X1, Y1, X2, Y2, X)
+
+Algoritmo
+```java
+Función interpolacionCuadratica(x0, y0, x1, y1, x2, y2, x)
+    a = ((y2 - y0) / ((x2 - x0) * (x2 - x1))) - ((y1 - y0) / ((x1 - x0) * (x2 - x1)))
+    b = ((y1 - y0) / (x1 - x0)) - a * (x0 + x1)
+    c = y0 - a * Potencia(x0, 2) - b * x0
+    y = a * Potencia(x, 2) + b * x + c
     retorno y
 ```
 
