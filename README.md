@@ -60,6 +60,15 @@ Función interpolacionCuadratica(x0, y0, x1, y1, x2, y2)
 
 SIN FUNCIÓN (UNICAMENTE LOS PUNTOS: X0, Y0, X1, Y1, X2, Y2, X)
 
+![image](https://github.com/NiliLG/MetodosNumericosT5/assets/147437701/1dd900ad-a1f0-49e8-8286-cac0cb71aeff)
+
+![image](https://github.com/NiliLG/MetodosNumericosT5/assets/147437701/e9c082e5-c53c-4bd4-a376-5024d4d63b57)
+
+![image](https://github.com/NiliLG/MetodosNumericosT5/assets/147437701/d9801ab9-2966-439f-a119-e4dbdcf4ce04)
+
+![image](https://github.com/NiliLG/MetodosNumericosT5/assets/147437701/40e0419e-6ca9-4d16-9e2a-6ef8801e39ab)
+
+
 Algoritmo
 ```java
 Función interpolacionCuadratica(x0, y0, x1, y1, x2, y2, x)
