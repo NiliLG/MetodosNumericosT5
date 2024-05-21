@@ -6,8 +6,8 @@
 * [Interpolación](#interpolación)
   * [Lineal](#lineal)
   * [Cuadrática](#cuadrática)
+  * [Newton](#newton)
 * [Extrapolación](#extrapolación)
-  * [Regla de Simpson 1/3](#regla_de-simpson_13)
 * [Conclusiones](#conclusiones)
 * [Bibliografía](#bibliografía)
 
@@ -58,6 +58,8 @@ Función interpolacionCuadratica(x0, y0, x1, y1, x2, y2)
 
 [Implementación](https://github.com/NiliLG/MetodosNumericosT5/tree/master/Interpolaci%C3%B3n/Cuadratica)
 
+![image](https://github.com/NiliLG/MetodosNumericosT5/assets/147437701/3ef45061-07ec-4cf0-9aa3-894dd6c76548)
+
 SIN FUNCIÓN (UNICAMENTE LOS PUNTOS: X0, Y0, X1, Y1, X2, Y2, X)
 
 ![image](https://github.com/NiliLG/MetodosNumericosT5/assets/147437701/1dd900ad-a1f0-49e8-8286-cac0cb71aeff)
@@ -79,7 +81,29 @@ Función interpolacionCuadratica(x0, y0, x1, y1, x2, y2, x)
     retorno y
 ```
 
-[Implementación](https://github.com/NiliLG/MetodosNumericosT5/tree/master/Interpolaci%C3%B3n/Cuadratica)
+[Implementación](https://github.com/NiliLG/MetodosNumericosT5/tree/master/Interpolaci%C3%B3n/CuadraticaSF)
+
+![image](https://github.com/NiliLG/MetodosNumericosT5/assets/147437701/791f5b2a-36d8-44ad-831c-ccd3d051dbce)
+
+## Newton
+
+El método de interpolación de Newton es otra técnica para encontrar el polinomio que pasa por un conjunto de puntos dados. Se basa en las diferencias divididas de Newton y ofrece una forma alternativa al método de Lagrange para construir el polinomio de interpolación. Dado un conjunto de n+1 puntos distintos (x0, y0), (x1, y1), ..., (xn, yn). Formula:
+
+![image](https://github.com/NiliLG/MetodosNumericosT5/assets/147437701/6d478a01-2785-40b1-975e-a6eef0bd66bf)
+
+Algoritmo
+```java
+Inicializar las diferencias divididas:
+Crear una tabla de diferencias divididas y asignar f(xi)=yi para i = 0, 1, 2, n
+Calcular las diferencias divididas:
+Para cada 𝑗 desde 1 hasta 𝑛 *Para cada 𝑖 desde 0 hasta 𝑛−𝑗 *Calcular f[xi,xi+1,…,xi+j] usando la fórmula recursiva.
+Construir el polinomio de interpolación:
+Iniciar el polinomio 𝑃(𝑥) con el primer coeficiente 𝑎0 = 𝑓[𝑥0].
+Para cada 𝑘 desde 1 hasta 𝑛: *Añadir el término ak(x-x0)(x-x1)...(x-xk-1) al polinomio, donde ak = f[x0, x1, ..., xk]​ ​
+```
+
+[Implementación](https://github.com/NiliLG/MetodosNumericosT5/tree/master/Interpolaci%C3%B3n/CuadraticaSF)
+
 
 # Extrapolación
 
