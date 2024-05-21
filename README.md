@@ -7,7 +7,6 @@
   * [Lineal](#lineal)
   * [Cuadrática](#cuadrática)
 * [Extrapolación](#extrapolación)
-  * [Regla de Simpson 1/3](#regla_de-simpson_13)
 * [Conclusiones](#conclusiones)
 * [Bibliografía](#bibliografía)
 
