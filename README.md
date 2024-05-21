@@ -11,6 +11,7 @@ Elton Yael Alba Roldan
   * [Lineal](#lineal)
   * [Cuadrática](#cuadrática)
   * [Newton](#newton)
+  * [Lagrange](#lagrange)
 * [Extrapolación](#extrapolación)
 * [Conclusiones](#conclusiones)
 * [Bibliografía](#bibliografía)
@@ -108,6 +109,31 @@ Para cada 𝑘 desde 1 hasta 𝑛: *Añadir el término ak(x-x0)(x-x1)...(x-xk-1
 
 [Implementación](https://github.com/NiliLG/MetodosNumericosT5/tree/master/Interpolaci%C3%B3n/Newton)
 
+
+## Lagrange
+
+El método de Lagrange, también conocido como el método de interpolación de Lagrange, es una técnica matemática para encontrar un polinomio que pasa exactamente por un conjunto de puntos dados. Este método es muy útil en la interpolación de datos y en la aproximación de funciones. El polinomio resultante, llamado polinomio de interpolación de Lagrange, se construye de manera que cada valor del polinomio coincide con el valor de la función en cada uno de los puntos dados. Dado un conjunto de n + 1 puntos distintos (x0, y0), (x1, y1), ..., (xn, yn) el objetivo es encontrar un polinomio P(x) de grado n Formula:
+
+![image](https://github.com/NiliLG/MetodosNumericosT5/assets/147437701/a1072f1b-3ca9-4b11-b2aa-a8cf36dd2fbe)
+
+Donde Li(x):
+
+![image](https://github.com/NiliLG/MetodosNumericosT5/assets/147437701/7d36579d-4ea5-4db8-921d-5f4551107f41)
+
+Algoritmo
+```java
+Inicializar el polinomio de interpolación:
+𝑃(𝑥) = 0.
+Para cada punto (𝑥𝑖,𝑦𝑖) en el conjunto de puntos:
+Inicializar el polinomio básico de Lagrange 𝐿𝑖(𝑥)=1.
+Construir el polinomio básico 𝐿𝑖(𝑥) para cada 𝑖:
+Para cada 𝑗 de 0 a 𝑛, donde 𝑗≠𝑖:
+Actualizar 𝐿𝑖(𝑥) multiplicándolo por ((𝑥−𝑥𝑗)/(𝑥𝑖−𝑥𝑗))​.
+Actualizar el polinomio de interpolación 𝑃(𝑥): *Sumar al polinomio de interpolación 𝑃(𝑥) el término 𝑦𝑖⋅𝐿𝑖(𝑥).
+Simplificar *Simplificar 𝑃(𝑥) si es necesario para obtener el polinomio en su forma más simple.
+```
+
+[Implementación](https://github.com/NiliLG/MetodosNumericosT5/tree/master/Interpolaci%C3%B3n/Newton)
 
 # Extrapolación
 
