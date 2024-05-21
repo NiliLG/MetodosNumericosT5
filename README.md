@@ -79,7 +79,7 @@ Función interpolacionCuadratica(x0, y0, x1, y1, x2, y2, x)
     retorno y
 ```
 
-[Implementación](https://github.com/NiliLG/MetodosNumericosT5/tree/master/Interpolaci%C3%B3n/Cuadratica)
+[Implementación](https://github.com/NiliLG/MetodosNumericosT5/tree/master/Interpolaci%C3%B3n/CuadraticaSF)
 
 ![image](https://github.com/NiliLG/MetodosNumericosT5/assets/147437701/791f5b2a-36d8-44ad-831c-ccd3d051dbce)
 
