@@ -1,5 +1,9 @@
 # INTERPOLACIÓN Y AJUSTE DE FUNCIONES
 
+Equipo:
+Nili Estefanía López Gutierrez 
+Elton Yael Alba Roldan
+
 # Índice
 
 * [Introducción](#introducción)
@@ -102,7 +106,7 @@ Iniciar el polinomio 𝑃(𝑥) con el primer coeficiente 𝑎0 = 𝑓[𝑥0].
 Para cada 𝑘 desde 1 hasta 𝑛: *Añadir el término ak(x-x0)(x-x1)...(x-xk-1) al polinomio, donde ak = f[x0, x1, ..., xk]​ ​
 ```
 
-[Implementación](https://github.com/NiliLG/MetodosNumericosT5/tree/master/Interpolaci%C3%B3n/CuadraticaSF)
+[Implementación](https://github.com/NiliLG/MetodosNumericosT5/tree/master/Interpolaci%C3%B3n/Newton)
 
 
 # Extrapolación
