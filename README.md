@@ -81,6 +81,9 @@ Función interpolacionCuadratica(x0, y0, x1, y1, x2, y2, x)
 
 [Implementación](https://github.com/NiliLG/MetodosNumericosT5/tree/master/Interpolaci%C3%B3n/Cuadratica)
 
+![image](https://github.com/NiliLG/MetodosNumericosT5/assets/147437701/791f5b2a-36d8-44ad-831c-ccd3d051dbce)
+
+
 # Extrapolación
 
 Predice valores más allá del rango de los datos conocidos. A diferencia de la interpolación, que estima valores dentro del rango de datos existentes, la extrapolación extiende esta estimación más allá de esos límites. Utiliza la tendencia identificada en los datos conocidos para prever cómo se comportarán los valores fuera de ese rango. Esto implica hacer suposiciones sobre la continuidad o el patrón subyacente de los datos más allá de lo que se ha observado.
