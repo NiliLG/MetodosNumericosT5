@@ -57,6 +57,8 @@ Función interpolacionCuadratica(x0, y0, x1, y1, x2, y2)
 
 [Implementación](https://github.com/NiliLG/MetodosNumericosT5/tree/master/Interpolaci%C3%B3n/Cuadratica)
 
+![image](https://github.com/NiliLG/MetodosNumericosT5/assets/147437701/3ef45061-07ec-4cf0-9aa3-894dd6c76548)
+
 SIN FUNCIÓN (UNICAMENTE LOS PUNTOS: X0, Y0, X1, Y1, X2, Y2, X)
 
 ![image](https://github.com/NiliLG/MetodosNumericosT5/assets/147437701/1dd900ad-a1f0-49e8-8286-cac0cb71aeff)
