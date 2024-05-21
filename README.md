@@ -29,21 +29,23 @@ El proceso de interpolación lineal implica trazar una línea recta entre dos pu
 
 y = y1 + (x - x1) * ((y2 - y1) / (x2 - x1))
 
-[Implementación](https://github.com/NiliLG/MetodosNumericosT5/tree/master/Interpolaci%C3%B3n/Lineal)
-
 Algoritmo
 ```java
 Función interpolacionLineal(x1, y1, x2, y2, x)
         retorno y1 + (x - x1) * ((y2 - y1) / (x2 - x1))
 ```
 
+[Implementación](https://github.com/NiliLG/MetodosNumericosT5/tree/master/Interpolaci%C3%B3n/Lineal)
+
+![image](https://github.com/NiliLG/MetodosNumericosT5/assets/147437701/dc03d2df-7d2d-4832-b16b-7f84720fa0da)
+
 ## Cuadrática
 
 Es un método que utiliza una función cuadrática para estimar valores intermedios entre tres puntos conocidos en un conjunto de datos. A diferencia de la interpolación lineal, que asume una relación lineal entre los puntos, la interpolación cuadrática utiliza una función de segundo grado, lo que le permite modelar curvas más complejas.
 
-![image](https://github.com/NiliLG/MetodosNumericosT5/assets/147437701/87d1a744-013f-42b0-8063-32d202b7653a)
+CON FUNCIÓN (EJEMPLO: ------------ FUNCIÓN: f(x)=2senx-(x^2)/10 ------------ PUNTOS: X0, Y0, X1, Y1, X2, Y2):
 
-[Implementación](https://github.com/NiliLG/MetodosNumericosT5/tree/master/Interpolaci%C3%B3n/Cuadratica)
+![image](https://github.com/NiliLG/MetodosNumericosT5/assets/147437701/87d1a744-013f-42b0-8063-32d202b7653a)
 
 Algoritmo
 ```java
@@ -53,6 +55,32 @@ Función interpolacionCuadratica(x0, y0, x1, y1, x2, y2)
     y = a / b
     retorno y
 ```
+
+[Implementación](https://github.com/NiliLG/MetodosNumericosT5/tree/master/Interpolaci%C3%B3n/Cuadratica)
+
+SIN FUNCIÓN (UNICAMENTE LOS PUNTOS: X0, Y0, X1, Y1, X2, Y2, X)
+
+![image](https://github.com/NiliLG/MetodosNumericosT5/assets/147437701/1dd900ad-a1f0-49e8-8286-cac0cb71aeff)
+
+![image](https://github.com/NiliLG/MetodosNumericosT5/assets/147437701/e9c082e5-c53c-4bd4-a376-5024d4d63b57)
+
+![image](https://github.com/NiliLG/MetodosNumericosT5/assets/147437701/d9801ab9-2966-439f-a119-e4dbdcf4ce04)
+
+![image](https://github.com/NiliLG/MetodosNumericosT5/assets/147437701/40e0419e-6ca9-4d16-9e2a-6ef8801e39ab)
+
+
+Algoritmo
+```java
+Función interpolacionCuadratica(x0, y0, x1, y1, x2, y2, x)
+    a = ((y2 - y0) / ((x2 - x0) * (x2 - x1))) - ((y1 - y0) / ((x1 - x0) * (x2 - x1)))
+    b = ((y1 - y0) / (x1 - x0)) - a * (x0 + x1)
+    c = y0 - a * Potencia(x0, 2) - b * x0
+    y = a * Potencia(x, 2) + b * x + c
+    retorno y
+```
+
+[Implementación](https://github.com/NiliLG/MetodosNumericosT5/tree/master/Interpolaci%C3%B3n/Cuadratica)
+
 # Extrapolación
 
 Predice valores más allá del rango de los datos conocidos. A diferencia de la interpolación, que estima valores dentro del rango de datos existentes, la extrapolación extiende esta estimación más allá de esos límites. Utiliza la tendencia identificada en los datos conocidos para prever cómo se comportarán los valores fuera de ese rango. Esto implica hacer suposiciones sobre la continuidad o el patrón subyacente de los datos más allá de lo que se ha observado.
