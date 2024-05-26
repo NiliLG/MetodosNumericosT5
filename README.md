@@ -1,7 +1,9 @@
 # INTERPOLACIÓN Y AJUSTE DE FUNCIONES
 
 Equipo:
+
 Nili Estefanía López Gutierrez 
+
 Elton Yael Alba Roldan
 
 # Índice
@@ -141,7 +143,7 @@ Predice valores más allá del rango de los datos conocidos. A diferencia de la 
 
 # Conclusiones
 
-Inf
+La interpolación es bastante importante en matemáticas, estadística, ingeniería e informática. Permite estimar valores entre datos conocidos, suavizar curvas y prever resultados. Es fundamental para análisis de datos, modelado de fenómenos físicos y compresión de información, mejorando la comprensión y la toma de decisiones fundamentadas en datos. Además de que su desarrollo o su proceso de solución es sencillo y fácil de entender.
 
 # Bibliografía
 
